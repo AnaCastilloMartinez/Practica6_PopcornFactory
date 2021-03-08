@@ -12,7 +12,7 @@ class DetalleContenido : AppCompatActivity() {
         val bundle = intent.extras
         if (bundle !=null){
             this.iv_movie_imagen.setImageResource(bundle.getInt("header"))
-            this.tv_name.setText(bundle.getString("nombre"))
+            this.tv_name.setText(bundle.getString("name"))
             this.tv_sinopsis.setText(bundle.getString("sinopsis"))
         }
     }
